@@ -1,0 +1,8 @@
+cache : 
+	장점 : 서버의 부하를 줄여주기 위해서 사용.
+	단점 : 서버의 정보가 바뀌면 부정확한 처리를 할 수 있다.
+
+DNS Cache : ipconfig /displaydns	<== DNS의 cache를 확인 (TTL)
+		C:\Windows\System32\drivers\etc\hosts
+
+	    ipconfig /flushdns	<== DNS의 cache를 삭제
