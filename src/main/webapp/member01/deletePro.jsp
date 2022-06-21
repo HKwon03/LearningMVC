@@ -2,10 +2,12 @@
     pageEncoding="UTF-8"%>
 <%@ page import = "logon.LogonDBBean" %>
 
-<% request.setCharacterEncoding("utf-8");%>
+<%
+request.setCharacterEncoding("utf-8");
+%>
 
 <%
-  String id = (String)session.getAttribute("id");
+String id = (String)session.getAttribute("id");
   String passwd  = request.getParameter("passwd");
 	
   LogonDBBean manager = LogonDBBean.getInstance();

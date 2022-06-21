@@ -8,10 +8,12 @@
 <script src="../js/jquery-1.11.0.min.js"></script>
 <script src="modify.js"></script>
 
-<% request.setCharacterEncoding("utf-8");%>
+<%
+request.setCharacterEncoding("utf-8");
+%>
 
-<% 
-  String id = (String)session.getAttribute("id");
+<%
+String id = (String)session.getAttribute("id");
   String passwd = request.getParameter("passwd");
 
   LogonDBBean manager = LogonDBBean.getInstance();

@@ -2,10 +2,12 @@
     pageEncoding="UTF-8"%>
 <%@ page import = "logon.LogonDBBean" %>
 
-<% request.setCharacterEncoding("utf-8");%>
+<%
+request.setCharacterEncoding("utf-8");
+%>
 
-<% 
-  //id는 사용자가 회원가입을 하기위해서 입력한 아이디
+<%
+//id는 사용자가 회원가입을 하기위해서 입력한 아이디
   String id = request.getParameter("id");
   
   //DB처리빈인 LogonDBBean클래스의 객체를 얻어낸다.
@@ -16,4 +18,4 @@
   int check= manager.confirmId(id);
   
   out.println(check);//처리 결과를 register.js로 리턴
- %>
+%>
